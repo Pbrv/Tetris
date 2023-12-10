@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>PIMATRIS</title>
+</head>
+<body>
+    <div id="div_formulario">
+        <form action="">
+            <label>Escribe tu nombre</label>
+            <input type="text" name="" id="usuario">
+            <label>Escoge tu avatar</label>
+            <div id="div_avatar">
+                <div class="avatar"><img src="img/chicken.png" alt="" ></div>
+                <div class="avatar"><img src="img/giraffe.png" alt="" ></div>
+                <div class="avatar"><img src="img/koala.png" alt="" ></div>
+                <div class="avatar"><img src="img/panda.png" alt="" ></div>
+                <div class="avatar"><img src="img/rabbit.png" alt="" ></div>
+                <div class="avatar"><img src="img/sea-lion.png" alt="" ></div>
+                <div class="avatar"><img src="img/meerkat.png" alt="" ></div>
+                <div class="avatar"><img src="img/dog.png" alt="" ></div>
+            </div>
+            <input type="submit" value="Jugar" id="boton_form" >
+        </form>
+    </div>
+
+    <div id="juego">
+        <div class="cabecera" >
+            <img src="img/logo.png" alt="" id="logo">
+        </div>
+        <div class="izquierda">
+            
+            <div class="ranking">
+                <p>RANKING</p>
+                <div class="ranking_visible">
+
+                    <div class="titulos">
+                        <p>Aún no hay datos en el Ranking</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="score">
+                <p>Score</p>
+                <p id="score">0</p>
+            </div>
+        </div>
+
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+            <button id="play_pause_game">
+                <img src="img/pause.png" alt="" id="pause">
+            </button>
+            <button class="flechas_dir">
+                <img src="img/arrow-up.png" alt="" id="flechaArriba">
+            </button>
+            <div class="flex_botones">
+                <button class="flechas_dir">
+                    <img src="img/arrow-left.png" alt="" id="flechaIzq">
+                </button>
+                <button class="flechas_dir">
+                    <img src="img/arrow-down.png" alt="" id="flechaAbajo">
+                </button>
+                <button class="flechas_dir">
+                    <img src="img/arrow-right.png" alt="" id="flechaDer">
+                </button>
+            </div>
+        </div>
+
+        <div class="derecha">
+            <div class="musica">
+                <audio loop>
+                    <source src="audio/cancion.mp3" type="audio/mp3">
+                    Tu navegador no soporta el audio
+                </audio>
+                <div class="audio"><img src="img/down-vol.png" alt=""></div>
+                <div class="audio"><img src="img/mute.png" alt=""></div>
+                <div class="audio"><img src="img/high-vol.png" alt=""></div>
+            </div>
+            <div class="pieza">
+                <p>Siguiente pieza</p>
+            </div>
+            <div class="tiempo_juego"> </div>
+        </div>
+
+        <div class="footer">
+            <p>Imanol Alonso  y  Pilar Bravo</p>
+            <div class="burbuja"></div> <!-- burbujas fondo -->
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
